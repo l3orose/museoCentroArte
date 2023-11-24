@@ -113,7 +113,7 @@ header {
     height: 80px;
     background-color: #d4be98;
     -webkit-transform: rotate(-30deg); 
--moz-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
 }
 .hazte-amigo a{
     font-weight: bold;
@@ -158,27 +158,27 @@ header {
     75%{margin-left:-300%;}
     100%{margin-left:-300%;}
 }
-.exposiciones {
+.exposiciones, .actividades, .visitas-recomendadas {
     display: flex;
     flex-direction: column;
     background-color: #fff;
     padding-top: 10px;
 }
-.exposiciones ul {
+.exposiciones ul, .actividades ul, .visitas-recomendadas ul {
     display: flex;
     justify-content: space-around;
     margin: 0 80px;
     background-color: white;
 }
-.exposiciones li:hover{
+.exposiciones li:hover, .actividades li:hover, .visitas-recomendadas li:hover{
     opacity: 0.8;
 }
-.exposiciones li:nth-child(2) {
+.exposiciones li:nth-child(2)  {
     border-left: 1px solid #5c5a5a;
     border-right: 1px solid #5c5a5a;
     padding: 0 15px;
 }
-.exposiciones h4, p {
+.exposiciones h4, .exposiciones p {
     font-weight: 100;
     margin: 20px 0;
 }
@@ -192,12 +192,12 @@ header {
     margin-left: 80px;
     border-radius: 8px;
 }
-.todas-exposiciones:hover {
+.todas-exposiciones:hover, .actividades li:nth-child(4) a:hover {
     background-color: #303030;
 }
 .todas-exposiciones a{
     color: white;
-    font-weight: bold;
+    
 }
 .colecciones {
     display: flex;
@@ -209,7 +209,90 @@ header {
 .colecciones img:hover {
     opacity: 0.9;
 }
-.colecciones p{
+.colecciones h2 {
     font-size: 30px;
     font-weight: bold;
+}
+.actividades{
+    margin-top: 30px;
+}
+.actividades li, .visitas-recomendadas li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.actividades .tag {
+    background-color: #EEE5D5;
+    font-size: 14px;
+}
+.actividades .tags {
+    gap: 30px;
+    
+}
+.actividades .tags a{
+    color: #93733b;
+    font-weight: bold;
+    padding: 6px;
+    margin: 5px;
+}
+.actividades h4 {
+    font-weight: 100;
+}
+.actividades li:nth-child(2){
+    border-left: 1px solid #5c5a5a;
+    border-right: 1px solid #5c5a5a;
+    padding: 0 10px;
+    margin-left: 10px;    
+}
+.actividades li:nth-child(3) {
+    margin-left: 10px;
+}
+.actividades h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+.actividades li:nth-child(4) {
+    background-color: #EEE5D5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 20px;
+    position: relative;
+    bottom: 50px;
+    margin-left: 20px;
+    height: 350px;
+}
+.actividades li:nth-child(4):hover{
+    background-color: #EEE5D5;
+    opacity: 1;
+}
+.actividades li:nth-child(4) h3 {
+    font-size: 30px;
+}
+.actividades li:nth-child(4) h4 {
+    font-weight: 100;
+    font-size: 25px;
+}
+.actividades li:nth-child(4) p {
+    font-size: 14px;
+}
+.actividades li:nth-child(4) a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+}
+
+.visitas-recomendadas li{
+    padding: 20px;
+    
+}
+.visitas-recomendadas h2 {
+    margin-left: 70px;
 }
