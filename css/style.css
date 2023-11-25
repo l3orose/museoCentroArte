@@ -142,7 +142,7 @@ header {
     justify-content: center;
 }
 .slider ul img {
-    width: 90%;
+    width: 100%;
     height: 100%;
 }
 @keyframes cambio {
@@ -210,8 +210,9 @@ header {
     opacity: 0.9;
 }
 .colecciones h2 {
-    font-size: 30px;
+    font-size: 38px;
     font-weight: bold;
+    margin-bottom: 15px;
 }
 .actividades{
     margin-top: 30px;
@@ -248,9 +249,10 @@ header {
     margin-left: 10px;
 }
 .actividades h2 {
-    font-size: 30px;
+    font-size: 38px;
     font-weight: bold;
     margin-left: 80px;
+    margin-bottom: 15px;
 }
 .actividades li:nth-child(4) {
     background-color: #EEE5D5;
@@ -294,5 +296,162 @@ header {
     
 }
 .visitas-recomendadas h2 {
+    font-size: 38px;
+    font-weight: bold;
     margin-left: 70px;
+    margin-bottom: 10px;
+}
+.multimedia h5 {
+    margin-left: 80px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.multimedia ul li:nth-child(2) {
+    border: none;
+}
+.multimedia-logo {
+    width: 70px;
+    margin-left: 80px;
+    margin-bottom: 15px;
+}
+.todas-multimedia {
+    width: 300px;
+}
+.extra ul {
+    display: flex;
+    width: 87.5%;
+    margin-top: 60px;
+    margin-left: 80px;
+    align-items: center;
+}
+.extra li {
+    display: flex;
+    flex-direction: column;
+}
+
+.extra img {
+    width: 680px;
+    height: 280px;
+}
+.extra  .extra-texto {
+    background-color: #F8DF9E;
+    height: 280px;
+    justify-content: center;    
+}
+.extra-texto-texto {
+    padding: 0 50px;
+    margin: 10px 0;
+}
+.extra .todas-exposiciones {
+    color: white;
+    position: relative;
+    right: 35px;
+    margin-top: 15px;
+}
+.extra2 .extra-texto{
+    background-color: #2BC5D1;
+}
+.extra-texto:hover {
+    opacity: 0.9;
+}
+.extra h3 {
+    font-size: 30px;
+}
+.extra h4 {
+    font-size: 22px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #373737;
+    padding: 30px;
+    margin-top: 100px;
+    align-items: center;
+}
+.iconos-footer {
+    border-bottom: 1px solid rgb(43, 41, 41);
+    
+}
+.iconos-footer ul{
+    display: flex;
+    gap: 2px;    
+}
+
+.iconos-footer a:hover {
+    opacity: 0.6;
+    transition-delay: 0.1s;
+
+}
+.iconos-footer ul p {
+    width: 200px;
+    font-size: 13px;
+    color: #8B8B8B;
+}
+.enlaces-footer {
+    display: flex;
+    justify-content: space-between;   
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.enlaces-footer ul {
+    gap: 10px;
+}
+.enlaces-footer h3 {
+    color: white;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.enlaces-footer a, .enlaces-footer p {
+    color: rgb(160, 160, 160);
+}
+.enlaces-footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.enlaces-footer li {
+    margin-bottom: 10px;
+}
+
+.contenedor-enlaces-museo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+}
+
+.enlaces-museo ul {
+    display: flex;
+    flex-direction: column;
+    
+}
+.enlaces-footer-visita, .enlaces-footer-coleccion, .enlaces-footer-contacto {
+    gap: 20px;
+}
+.enlaces-footer-contacto {
+    width: 180px;    
+}
+
+.boton-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    width: 80%;
+    height: 40px;
+    border-radius: 5%;    
+}
+.subscribir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    height: 40px;
+    border-radius: 5%; 
+}
+.subscribir  p{
+    color: black;
 }
