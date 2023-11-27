@@ -222,15 +222,15 @@ header {
     flex-direction: column;
     gap: 20px;
 }
-.actividades .tag {
+.actividades .tag, .visitas-recomendadas .tag {
     background-color: #EEE5D5;
     font-size: 14px;
 }
-.actividades .tags {
-    gap: 30px;
+.actividades .tags, .visitas-recomendadas .tags {
+    gap: 25px;
     
 }
-.actividades .tags a{
+.actividades .tags a, .visitas-recomendadas .tags a{
     color: #93733b;
     font-weight: bold;
     padding: 6px;
@@ -317,6 +317,13 @@ header {
 .todas-multimedia {
     width: 300px;
 }
+.publicaciones ul {
+    margin-bottom: 30px;
+}
+
+.extra img:hover {
+    opacity: 0.9;
+}
 .extra ul {
     display: flex;
     width: 87.5%;
@@ -366,7 +373,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #373737;
-    padding: 30px;
+    padding: 30px 30px 0px 30px;
     margin-top: 100px;
     align-items: center;
 }
@@ -393,7 +400,7 @@ footer {
     display: flex;
     justify-content: space-between;   
     gap: 60px;
-    margin-top: 60px;
+    margin: 60px 0;
 }
 
 .enlaces-footer ul {
@@ -454,4 +461,69 @@ footer {
 }
 .subscribir  p{
     color: black;
+}
+.footer-ultimo {
+    display: flex;
+    flex-direction: column;
+    background-color: #2A2828;
+    width: 100vw;
+    height: 330px;
+    padding: 50px;
+    gap: 30px;
+}
+
+.ultimo1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.ultimo1 h4 {
+    color: rgb(201, 198, 198);
+    font-weight: 100;
+}
+.social-icons img {
+    width: 40px;
+}
+.ultimo2 {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+}
+.ultimo2 a, .ultimo3 a {
+    color: rgb(201, 198, 198);
+}
+.ultimo2 a:hover, .ultimo3 a:hover {
+    text-decoration: underline;
+}
+
+.ultimo3 {
+    display: flex;
+}
+.ultimo3 .iconos {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    
+}
+.ultimo3 img {
+    margin-right: 10px;
+}
+
+.ultimo3 .enlaces {
+    display: flex;
+    align-items: center;  
+    width: 100%;      
+    margin: 0 0 0 150px;
+
+}
+
+.ultimo3 ul {
+    display: flex;
+    width: 100%;
+}
+.ultimo3 li {
+    margin-right: 4px;
 }
