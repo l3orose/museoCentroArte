@@ -527,3 +527,106 @@ footer {
 .ultimo3 li {
     margin-right: 4px;
 }
+/* hoy en el museo----------------------------------- */
+.comprar {
+    width: 100%;
+    gap: 40%;
+    justify-content: center;
+    display: flex;    
+    align-items: flex-end;
+    padding: 20px 0 0 0;
+    border-top: #c2c2c2 solid 1px;
+}
+.comprar h2 {
+    font-size: 45px;
+}
+.comprar p {
+    font-size: 20px;
+    font-weight: 100;
+}
+.comprar a{
+    color: white;
+    width: 200px;
+    border-radius: 5%;
+    opacity: 0.9;
+
+}
+.comprar a:hover {
+    opacity: 1;
+}
+.calendario-contenedor {
+    width: 86%;
+    display: flex;
+    margin: 40px 90px;
+    padding-top: 30px;
+    border-top: solid 1px #c2c2c2;
+    
+}
+.calendario_aside p {
+    display: flex;
+    align-items: center;
+    width: 900px;
+    height: 50px;
+    background-color: #EEE5D5;
+    color: #a89569;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 40px;
+    
+}
+.calendario_aside h3 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.foto_hoy_evento {
+    display: flex;
+    
+}
+.foto_hoy_evento img {
+    margin: 20px 20px 0 0;
+}
+.foto_hoy_evento h4 {
+    font-size: 24px;
+}
+.foto_hoy_evento span {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+.horarios {
+    width: 1170px;
+    height: 250px;
+    margin: 50px 0 0 75px;
+    display: flex;
+    background-color: #222222;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.horarios ul {
+    display: flex;
+    align-items: center;
+    
+    
+}
+.horarios li {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    color: white;
+    gap: 10px;
+}
+.horarios li a {
+    color: white;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #373737;
+    height: 40px;
+}
+.horarios li a:hover {
+    background-color: #222222;
+}
