@@ -663,12 +663,16 @@ footer {
     background-color: #222222;
 }
 /* compras ------------------- */
-nav {
+.nav_compras {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 130px;
+    width: 100%;
+    padding: 20px 60px;
     border-bottom: 1px solid #e4e4e4;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
 }
 .logo {
     width: 130px;
@@ -686,7 +690,7 @@ nav {
     height: 80px;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 150px;
+    padding: 150px 150px;
     gap: 40px;
 }
 .enlace_num_personas a{
@@ -723,7 +727,7 @@ nav {
     margin-top: 20px;
     width: 1100px;
 }
-.funcion1 {
+.funcion {
     display: flex;
     flex-direction: row;
     background-color: #F5F5F5;
@@ -747,12 +751,283 @@ nav {
 }
 .enlaces_compra_funcion span {
     margin-right: 20px;
+    font-size: 25px;
 }
 .btn_comprar {
-    background-color: #5c5a5a;
-    padding: 12px;
+    background-color: #2e2d2d;
+    padding: 12px 20px;
     color: white;
     font-size: 20px;
     font-weight: bold;
     
+}
+.mas_funciones input {
+    border: none;
+    background-color: #f3efef;
+    width: 150px;
+    height: 30px;
+}
+@keyframes slide {
+	0% { transform: translateX(0); }
+	20% { transform: translateX(0); }
+
+	25% { transform: translateX(-100%); }
+	45% { transform: translateX(-100%); }
+
+	50% { transform: translateX(-200%); }
+	70% { transform: translateX(-200%); }
+
+	80% { transform: translateX(-300%); }
+	100% { transform: translateX(-300%); }
+}
+
+.otras_slider {
+    scroll-behavior: smooth;
+    margin: 30px 20px;    
+}
+
+.slider {
+	position: relative;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    align-items: center;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.slides:hover .slide {
+	animation-play-state: paused;
+    
+}
+
+.slide img {
+	width: 70%;
+    margin-bottom: 30px;
+}
+
+.slide:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+.otras_slider figcaption {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    height: 160px;
+    width: 480px;
+    padding: 15px;
+}
+.otras_slider .btn_compra {
+    margin-top: 30px;
+    border: 1px solid black;
+    width: 100px;
+    padding: 10px;
+    margin-left: 340px;
+    text-transform: uppercase;
+}
+.otras_slider .btn_compra:hover {
+    text-decoration: underline;
+    
+}
+.footer_compra {
+    display: flex;
+    width: 100%;    
+    background-color: #303030;
+    color: #929292;
+    padding: 40px;
+    
+}
+.footer_compra a {
+    color: white;
+    font-size: 16px;
+}
+.info_contacto {
+    margin-left: 80px;
+    margin-right: 200px;
+    display: flex;
+    gap: 90px;
+}
+.info_contacto p {
+    width: 300px;
+    font-size: 14px;
+    
+}
+.btn_contacto ul{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;    
+}
+.btn_contacto li {
+    width: 130px;
+    margin-top: 20px;
+}
+.btn_contacto a {
+    font-size: 16px;
+}
+.btn_contacto .social-icons a {
+    margin-right: 10px;
+}
+.footer_compra_ultimo {
+    display: flex;
+    background-color: #272322;
+    padding: 20px 50px 10px 80px;
+    justify-content: space-between;
+}
+.footer_compra_ultimo img{
+    width: 150px;
+    height: 60px;
+}
+.derechos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.derechos a {
+    font-weight: bold;
+}
+.nav_guias ul {
+    display: flex;
+    margin-left: 80px;
+    gap: 16px;
+    background-color: #F5F5F5;
+    width: 86%;
+}
+.nav_guias li {
+    padding: 15px;
+}
+.nav_guias a {
+    font-size: 15px;
+}
+.nav_guias li:hover {
+    background-color: #e6e5e5;
+}
+.enlace_inicio {
+    display: flex;
+    margin: 20px 0 20px 80px;
+    font-size: 14px;
+}
+.enlace_inicio p {
+    color: #8B8B8B;
+}
+.enlace_inicio h2 {
+    font-size: 30px;
+}
+main {
+    margin-left: 80px;
+}
+main {
+    margin-left: 80px;    
+}
+.contenedor_grande {
+    display: flex;
+    border-top: 4px solid black;
+    width: 1150px;
+    padding-top: 30px;
+}
+.contenedor_grande article {
+    margin-left: 30px;
+}
+.contenedor_grande p{
+    width: 500px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 2.5;
+}
+.contenedor_grande span {
+    font-weight: bold;
+}
+.contenedor_chico {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    line-height: 2.5;
+}
+.contenedor_chico a {
+    background-color: #363636;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    border-radius: 6%;
+    margin-left: 100px;
+}
+.tarifas {
+    display: flex;
+    width: 90%;
+    gap: 200px;
+    background-color: #222222;
+    color: white;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 200px;
+}
+.tarifas h3 {
+    font-size: 30px;
+}
+.tarifas p {
+    display: flex;
+    line-height: 2;
+    flex-direction: column;
+}
+.tarifas a {
+    padding: 12px;
+    color: white;
+    background-color: #363636;
+    width: 150px;
+    font-weight: bold;
+    height: 50px;
+}
+.tarifas a:nth-child(3) {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: #fff;
+}
+.tarifas a:nth-child(3):hover {
+    background-color: #363636;
+    color: white;
+}
+.como_llegar {
+    display: flex;
+    margin-top: 50px;
+}
+.como_llegar .izquierdo {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-right: 45px;
+    gap: 50px;
+}
+.como_llegar p {
+    font-size: 18px;
+    align-items: justify;
+}
+.como_llegar .izquierdo a {
+    color: #a89569;
+    font-weight: bold;
+}
+.como_llegar .izquierdo a:hover {
+    text-decoration: underline;
+    color: #93733b;
 }
