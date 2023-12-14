@@ -1179,8 +1179,34 @@ main {
     background-color: white;
 }
 
+.horario .izquierdo {
+    border-right: 1px solid #e6e5e5;
+    padding-right: 20px;
+}
+
+.horario {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.horario_info {
+    display: flex;
+    flex-direction: column; 
+    
+}
+.horario_info p {
+    font-size: 18px;
+    border-bottom: 1px solid #e6e5e5;
+}
+.horario {
+    display: flex;
+}
 .contenedor_horario {
-    display: flex;    
+    display: flex; 
+    
+}
+.contenedor_horario span {
+    font-size: 15px;
+    font-weight: 100;
 }
 .horario .izquierdo img {
     height: 50px;
@@ -1190,7 +1216,33 @@ main {
 .dias {
     display: flex;
     gap: 70px;
+    margin-top: 20px;
+    
+}
+.dias ul {
+    width: 200px;
 }
 .dias li {
+    font-size: 16px;
     margin-bottom: 25px;
+    width: 200px;
+}
+.dias li a {
+    color: #a89569;
+}
+.dias_cierre {
+    background-color: #F5F5F5;
+    padding: 20px;
+}
+.dias_cierre p, .dias_cierre span{
+    color: #5c5a5a;
+    font-size: 15px; 
+    font-weight: normal;  
+    line-height: 1.5; 
+}
+.dias_cierre h4 {
+    font-weight: 200;
+}
+.dias_cierre span {
+    color: #aaa9a9;
 }
