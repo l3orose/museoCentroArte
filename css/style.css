@@ -1221,22 +1221,22 @@ main {
     margin-left: -20px;
     margin-right: 20px;
 }
-.dias {
+.horario_info .dias {
     display: flex;
     gap: 160px;
     margin-top: 20px;
     
 }
-.dias ul {
+.horario_info .dias ul {
     width: 100px;
 }
-.dias li {
+.horario_info .dias li {
     display: flex;
     font-size: 16px;
     margin-bottom: 25px;
     width: 200px;
 }
-.dias li a {
+.horario_info .dias li a {
     color: #a89569;
 }
 .dias_cierre {
@@ -1279,7 +1279,7 @@ main {
 .derecho .dias li{
     width: 300px;
 }
-ul.caja_derecho {
+.contenedor_horario ul.caja_derecho {
     display: flex;
     justify-content: space-between;
     width: 500px;
