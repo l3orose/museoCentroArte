@@ -20,8 +20,7 @@ header {
     display: flex;
     flex-direction: column;
 }
-.linea1 {
-    
+.linea1 {    
     background-color: #373737;
     height: 40px;
     padding-right: 100px;
@@ -1180,13 +1179,14 @@ main {
 }
 
 .horario .izquierdo {
-    border-right: 1px solid #e6e5e5;
-    padding-right: 20px;
+    border-right: 1px solid #e6e5e5;    
+    width: 570px;
+    padding: 10px;
 }
 
 .horario {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;    
+    
 }
 .horario_info {
     display: flex;
@@ -1195,34 +1195,43 @@ main {
 }
 .horario_info p {
     font-size: 18px;
+    color: #5c5a5a;
+    width: 450px;
     border-bottom: 1px solid #e6e5e5;
 }
-.horario {
+.horario_info li {
+    color: #5c5a5a;
     display: flex;
+    flex-direction: column;
 }
+
 .contenedor_horario {
     display: flex; 
+    margin-bottom: 30px;
     
 }
 .contenedor_horario span {
     font-size: 15px;
     font-weight: 100;
+    color: #5c5a5a;
+    margin: 10px 0;
 }
-.horario .izquierdo img {
+.horario .izquierdo img, .derecho img {
     height: 50px;
     margin-left: -20px;
     margin-right: 20px;
 }
 .dias {
     display: flex;
-    gap: 70px;
+    gap: 160px;
     margin-top: 20px;
     
 }
 .dias ul {
-    width: 200px;
+    width: 100px;
 }
 .dias li {
+    display: flex;
     font-size: 16px;
     margin-bottom: 25px;
     width: 200px;
@@ -1246,3 +1255,60 @@ main {
 .dias_cierre span {
     color: #aaa9a9;
 }
+.derecho .compra_entradas {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-bottom: 25px;
+}
+.compra_entradas a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    background-color: #363636;
+    width: 160px;
+    font-weight: bold;
+    height: 45px;
+}
+.derecho .dias span {
+    font-size: 12px;
+    color: #a09f9f;
+}
+.derecho .dias li{
+    width: 300px;
+}
+ul.caja_derecho {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+     
+}
+.ultima_caja {
+    display: flex;
+    padding: 20px 0;
+    gap: 80px;
+}
+.aviso {
+    display: flex;
+    flex-direction: column;
+    background-color: #EEE5D5;
+    width: 1150px;
+    padding: 20px;
+    margin-bottom: -30px;
+    gap: 20px;
+}
+.aviso section {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 40px;
+    line-height: 1.5;
+    color: #93733b;
+    font-weight: 100;
+}
+.aviso a {
+    color: #93733b;
+    font-weight: 100;
+    text-decoration: underline;
+} 
